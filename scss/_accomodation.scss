@@ -1,0 +1,152 @@
+main{
+    .accomodationdescription{
+        text-align: center;
+        font-family: $font-family;
+        .allstays{
+            @extend .accomodationdescription;
+            margin: 30px;
+            padding: 30px;
+        }
+    }
+
+    .sectionaccomodation{
+        background-color: white;
+        font-family: $font-family;
+    
+        display: grid;
+        grid-template-columns:auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+         "divaccomodation1 divaccomodation";
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 50px;
+        padding-bottom: 20px;
+    
+        .divaccomodation1{
+            grid-area: divaccomodation1;
+        }
+        
+        .divaccomodation{
+            grid-area: divaccomodation;
+        }
+    
+        @media screen and (max-width:480px){
+    
+            .sectionaccomodation{
+                display: grid;
+                grid-auto-columns: 1fr;
+                grid-template-columns: 2fr;
+                grid-template-rows:1fr 1fr;
+                grid-template-areas: 
+                    "divaccomodation1"
+                    "divaccomodation";
+            }
+    
+    }
+    
+    
+    }
+
+    .habitaciones{
+        margin-top: 40px;
+        font-family: $font-family;
+        color: rgb(19, 19, 18);
+        gap: 4px 1px;
+        text-align: center;
+        padding-top: 20px;
+        grid-auto-flow: row;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        grid-template-areas: 
+            "habitacion1 habitacion2"
+            "habitacion3 habitacion4"
+            "habitacion5 habitacion6";  
+        @media screen and (max-width: 480px) {
+            
+            display: grid;
+            grid-template-columns: 10fr ;
+            grid-template-rows:10fr 10fr 10fr 10fr 10fr 10fr ;
+            grid-template-areas:
+        
+                "habitacion1"
+                "habitacion2"
+                "habitacion3"
+                "habitacion4"
+                "habitacion5"
+                "habitacion6";
+            }
+        .habitacion1{
+            grid-area: habitacion1;
+            .texthabitacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+        }
+        .habitacion2{
+            grid-area: habitacion2;
+            .texthabitacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+            
+        }
+        .habitacion3{
+            grid-area: habitacion3;
+            .texthabitacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+            
+        }
+        .habitacion4{
+            grid-area: habitacion4;
+            .texthabitacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+            
+        }
+        .habitacion5{
+            grid-area: habitacion5;
+            .texthabitacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+            
+        }
+        .habitacion6{
+            grid-area: habitacion6;
+            .texthabitacion{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px;
+            }
+            
+        }
+        }
+    }
+    
+
+    
+
+
+
+
+
+
+
+
+

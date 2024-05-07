@@ -1,0 +1,617 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header, header .logohotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "EB Garamond", serif;
+  background-color: #f3eee7;
+}
+header .logohotel {
+  width: 200px;
+  border-radius: 70%;
+}
+header h1, header .logohotel h1 {
+  padding: 15px;
+}
+header h2, header .logohotel h2 {
+  margin-top: -15px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 420px) {
+  header h2, header .logohotel h2 {
+    text-align: center;
+  }
+}
+header .navbar {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+header .navbar a:hover {
+  color: black;
+  transform: scale(1.1, 1.1);
+}
+
+main {
+  background-color: #f3eee7;
+}
+main .videoprincipal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+main .presentacionhotel {
+  text-align: center;
+  padding: 45px;
+  font-family: "EB Garamond", serif;
+}
+main .presentacionhotel p {
+  margin-top: 10px;
+}
+main .carousel {
+  margin-bottom: 20px;
+  font-family: "EB Garamond", serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .carousel .d-block {
+  height: 700px;
+}
+@media screen and (max-width: 420px) {
+  main .carousel .d-block {
+    height: 400px;
+    width: 300px;
+  }
+}
+main .carousel .carousel-caption:hover {
+  background-color: #838282;
+  color: lavenderblush;
+}
+main .container {
+  margin-top: 20px;
+  font-family: "EB Garamond", serif;
+}
+@media screen and (max-width: 768px) {
+  main .container {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .container .fotosgrid {
+    height: 300px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .container .fotosgrid {
+    height: 400px;
+    width: 300px;
+  }
+}
+main .container h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+main .container p {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+main .container a {
+  text-decoration: none;
+  color: black;
+}
+main .container a:hover {
+  text-decoration: underline;
+}
+main .mapa {
+  margin-top: 50px;
+  padding: 20px;
+}
+main .mapa h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "EB Garamond", serif;
+}
+main .mapa p {
+  text-align: center;
+}
+main .mapa iframe {
+  width: 100%;
+}
+
+footer {
+  background-color: #f3eee7;
+  font-family: "EB Garamond", serif;
+}
+footer .contactus {
+  padding-top: 50px;
+  text-align: center;
+}
+footer .footerinfo {
+  padding-top: 0px;
+  color: #313131;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  text-align: center;
+}
+footer .footerinfo .datos .label {
+  margin-right: 30px;
+}
+footer .footerinfo .bottonform {
+  text-align: center;
+}
+footer .footerinfo .bottonform .submit {
+  margin-right: 20px;
+}
+footer .footerinfo .direccion {
+  margin-top: 100px;
+  padding: -25px;
+  font-size: 0.9rem;
+}
+footer .footerinfo .redes {
+  margin-bottom: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+main .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1920px) {
+  main .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "reception bedroom banio" "celebration dinning entrada" "habitacion livingroom lobby" "restaurant suite bathroom";
+  }
+  main .galeria .reception {
+    grid-area: reception;
+  }
+  main .galeria .bedroom {
+    grid-area: bedroom;
+  }
+  main .galeria .banio {
+    grid-area: banio;
+  }
+  main .galeria .celebration {
+    grid-area: celebration;
+  }
+  main .galeria .dinning {
+    grid-area: dinning;
+  }
+  main .galeria .entrada {
+    grid-area: entrada;
+  }
+  main .galeria .habitacion {
+    grid-area: habitacion;
+  }
+  main .galeria .livingroom {
+    grid-area: livingroom;
+  }
+  main .galeria .lobby {
+    grid-area: lobby;
+  }
+  main .galeria .restaurant {
+    grid-area: restaurant;
+  }
+  main .galeria .suite {
+    grid-area: suite;
+  }
+  main .galeria .bathroom {
+    grid-area: bathroom;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main .galeria {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "reception bedroom" "banio celebration" "dinning entrada" "habitacion livingroom" "lobby restaurant" "suite bathroom";
+  }
+  main .galeria .reception {
+    grid-area: reception;
+  }
+  main .galeria .bedroom {
+    grid-area: bedroom;
+  }
+  main .galeria .banio {
+    grid-area: banio;
+  }
+  main .galeria .celebration {
+    grid-area: celebration;
+  }
+  main .galeria .dinning {
+    grid-area: dinning;
+  }
+  main .galeria .entrada {
+    grid-area: entrada;
+  }
+  main .galeria .habitacion {
+    grid-area: habitacion;
+  }
+  main .galeria .livingroom {
+    grid-area: livingroom;
+  }
+  main .galeria .lobby {
+    grid-area: lobby;
+  }
+  main .galeria .restaurant {
+    grid-area: restaurant;
+  }
+  main .galeria .suite {
+    grid-area: suite;
+  }
+  main .galeria .bathroom {
+    grid-area: bathroom;
+  }
+}
+@media screen and (max-width: 725px) {
+  main .galeria {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "reception" "bedroom" "banio" "celebration" "dinning" "entrada" "habitacion" "livingroom" "lobby" "restaurant" "suite" "bathroom";
+  }
+  main .galeria .reception {
+    grid-area: reception;
+  }
+  main .galeria .bedroom {
+    grid-area: bedroom;
+  }
+  main .galeria .banio {
+    grid-area: banio;
+  }
+  main .galeria .celebration {
+    grid-area: celebration;
+  }
+  main .galeria .dinning {
+    grid-area: dinning;
+  }
+  main .galeria .entrada {
+    grid-area: entrada;
+  }
+  main .galeria .habitacion {
+    grid-area: habitacion;
+  }
+  main .galeria .livingroom {
+    grid-area: livingroom;
+  }
+  main .galeria .lobby {
+    grid-area: lobby;
+  }
+  main .galeria .restaurant {
+    grid-area: restaurant;
+  }
+  main .galeria .suite {
+    grid-area: suite;
+  }
+  main .galeria .bathroom {
+    grid-area: bathroom;
+  }
+}
+main .galeria .imagenes, main .galeria .imagenes:hover {
+  margin: 15px;
+  padding: 10px;
+  opacity: 0.7;
+  border: gray double 2px;
+}
+main .galeria .imagenes:hover {
+  opacity: 1;
+  border: white double 2px;
+  border-radius: 2%;
+}
+
+header .h1title {
+  margin: 20px;
+}
+
+.padre1 {
+  color: rgb(19, 19, 18);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2px 1px;
+  grid-template-areas: "a ." ". b" "c ." ". d";
+}
+@media screen and (max-width: 768px) {
+  .padre1 {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2px 1px;
+    grid-template-areas: "a" "b" "c" "d";
+  }
+}
+.padre1 .hijoA {
+  border: #313131 solid 1px;
+  grid-area: a;
+  display: flex;
+  align-items: center;
+}
+.padre1 .hijoA .ulaboutus {
+  list-style-type: none;
+}
+.padre1 .hijoA .ulaboutus .listaboutus1 {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+}
+.padre1 .hijoA .ulaboutus .parrafoaboutus {
+  margin: 4px;
+  font-weight: normal;
+  font-family: "EB Garamond", serif;
+}
+.padre1 .hijoB {
+  border: #313131 solid 1px;
+  grid-area: b;
+  display: flex;
+  align-items: center;
+}
+.padre1 .hijoB .ulaboutus {
+  list-style-type: none;
+}
+.padre1 .hijoB .ulaboutus .listaboutus1 {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+}
+.padre1 .hijoB .ulaboutus .parrafoaboutus {
+  margin: 4px;
+  font-weight: normal;
+  font-family: "EB Garamond", serif;
+}
+.padre1 .hijoC {
+  border: #313131 solid 1px;
+  grid-area: c;
+  display: flex;
+  align-items: center;
+}
+.padre1 .hijoC .ulaboutus {
+  list-style-type: none;
+}
+.padre1 .hijoC .ulaboutus .listaboutus1 {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+}
+.padre1 .hijoC .ulaboutus .parrafoaboutus {
+  margin: 4px;
+  font-weight: normal;
+  font-family: "EB Garamond", serif;
+}
+.padre1 .hijoD {
+  border: #313131 solid 1px;
+  grid-area: d;
+  display: flex;
+  align-items: center;
+}
+.padre1 .hijoD .ulaboutus {
+  list-style-type: none;
+}
+.padre1 .hijoD .ulaboutus .listaboutus1 {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+}
+.padre1 .hijoD .ulaboutus .parrafoaboutus {
+  margin: 4px;
+  font-weight: normal;
+  font-family: "EB Garamond", serif;
+}
+
+.review {
+  text-align: center;
+}
+.review h2 {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  margin-top: 50px;
+}
+.review .tripadvisor .tripadvisorreview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+main .accomodationdescription, main .accomodationdescription .allstays {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+}
+main .accomodationdescription .allstays {
+  margin: 30px;
+  padding: 30px;
+}
+main .sectionaccomodation {
+  background-color: white;
+  font-family: "EB Garamond", serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "divaccomodation1 divaccomodation";
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+main .sectionaccomodation .divaccomodation1 {
+  grid-area: divaccomodation1;
+}
+main .sectionaccomodation .divaccomodation {
+  grid-area: divaccomodation;
+}
+@media screen and (max-width: 480px) {
+  main .sectionaccomodation .sectionaccomodation {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "divaccomodation1" "divaccomodation";
+  }
+}
+main .habitaciones {
+  margin-top: 40px;
+  font-family: "EB Garamond", serif;
+  color: rgb(19, 19, 18);
+  gap: 4px 1px;
+  text-align: center;
+  padding-top: 20px;
+  grid-auto-flow: row;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-areas: "habitacion1 habitacion2" "habitacion3 habitacion4" "habitacion5 habitacion6";
+}
+@media screen and (max-width: 480px) {
+  main .habitaciones {
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 10fr 10fr 10fr 10fr 10fr 10fr;
+    grid-template-areas: "habitacion1" "habitacion2" "habitacion3" "habitacion4" "habitacion5" "habitacion6";
+  }
+}
+main .habitaciones .habitacion1 {
+  grid-area: habitacion1;
+}
+main .habitaciones .habitacion1 .texthabitacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+main .habitaciones .habitacion2 {
+  grid-area: habitacion2;
+}
+main .habitaciones .habitacion2 .texthabitacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+main .habitaciones .habitacion3 {
+  grid-area: habitacion3;
+}
+main .habitaciones .habitacion3 .texthabitacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+main .habitaciones .habitacion4 {
+  grid-area: habitacion4;
+}
+main .habitaciones .habitacion4 .texthabitacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+main .habitaciones .habitacion5 {
+  grid-area: habitacion5;
+}
+main .habitaciones .habitacion5 .texthabitacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+main .habitaciones .habitacion6 {
+  grid-area: habitacion6;
+}
+main .habitaciones .habitacion6 .texthabitacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+main .expeperiencecontainer {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 12px 19px;
+  grid-auto-flow: row;
+  grid-template-areas: "textowellnes fotowellness fotowellness1" "fotodinning fotodinning1 textodinning" "textocelebration fotocelebration fotocelebration1";
+}
+@media screen and (max-width: 768px) {
+  main .expeperiencecontainer {
+    font-size: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 12px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "textowellnes" "fotowellness" "fotowellness1" "textodinning" "fotodinning" "fotodinning1" "textocelebration" "fotocelebration" "fotocelebration1";
+  }
+}
+main .expeperiencecontainer .textowellnes {
+  grid-area: textowellnes;
+  padding-top: 30px;
+}
+main .expeperiencecontainer .textowellnes .h2wellness {
+  text-align: center;
+}
+main .expeperiencecontainer .fotowellness {
+  grid-area: fotowellness;
+  padding-left: 10px;
+}
+main .expeperiencecontainer .fotowellness1 {
+  grid-area: fotowellness1;
+}
+main .expeperiencecontainer .fotodinning {
+  grid-area: fotodinning;
+  padding-top: 20px;
+}
+main .expeperiencecontainer .fotodinning1 {
+  grid-area: fotodinning1;
+  padding-top: 20px;
+}
+main .expeperiencecontainer .textodinning {
+  grid-area: textodinning;
+  padding-top: 30px;
+  text-align: left;
+}
+main .expeperiencecontainer .textodinning .h2dinning {
+  text-align: center;
+}
+main .expeperiencecontainer .textocelebration {
+  grid-area: textocelebration;
+}
+main .expeperiencecontainer .textocelebration .h2celebration {
+  text-align: center;
+}
+main .expeperiencecontainer .fotocelebration {
+  grid-area: fotocelebration;
+}
+main .expeperiencecontainer .fotocelebration1 {
+  grid-area: fotocelebration1;
+}
+
+/*# sourceMappingURL=style.css.map */

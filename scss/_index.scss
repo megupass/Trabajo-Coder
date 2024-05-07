@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: $font-family;
+    background-color: $colorbackground;
+    .logohotel{
+        @extend header;
+        width: 200px;
+        border-radius: 70%;
+        
+    }
+
+    h1{            
+        padding: 15px;
+    }
+    h2{
+        margin-top: -15px;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        @media screen and (max-width:420px){
+            text-align: center;
+        }
+    }
+    .navbar{
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        a:hover{
+            color: black;
+            transform: scale(1.1 ,  1.1);
+        }
+      }
+}
+
+main{   
+    background-color: $colorbackground;
+    
+    .videoprincipal{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        width: 100%;
+        }
+    .presentacionhotel{
+        text-align:center;
+        padding: 45px ;
+        font-family: $font-family; 
+        p{
+            margin-top: 10px;
+        }
+        }
+    .carousel{
+        margin-bottom: 20px;
+        font-family: $font-family;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        
+        .d-block{
+            height:700px;
+            @media screen and (max-width:420px) {
+                height: 400px;
+                width: 300px;
+            }
+        }
+        .carousel-caption:hover{
+          
+            background-color: #838282;
+            color: lavenderblush;
+          
+        }
+           
+        }
+
+
+
+   .container{
+        margin-top: 20px;
+        font-family: $font-family; 
+        @media screen and (max-width: 768px) {
+            text-align: center; 
+        }
+
+        .fotosgrid{
+            @media screen and (max-width:420px) {
+                height: 300px;
+                width: 200px;
+            }
+            @media screen and (max-width:768px) {
+                height: 400px;
+                width: 300px;
+            }
+            
+        }
+
+        h2{
+            margin-top: 10px;
+            text-align: center;
+        }  
+        p{
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.2;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+                text-decoration: underline;
+                
+        }                  
+    }
+
+
+    .mapa{
+        margin-top: 50px;
+        padding: 20px;
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: $font-family; 
+        }
+        p{
+            text-align: center;
+        }
+        iframe{
+            width: 100%;
+        }
+        }
+    
+}
+
+footer{
+    background-color:  $colorbackground;
+    font-family: $font-family; 
+
+    .contactus{
+        padding-top:50px;
+        text-align: center;
+        
+    }
+    .footerinfo{
+        padding-top: 0px;
+        color: #313131; 
+        display: flex;
+        flex-direction: column;  
+        font-size: 1.2rem;    
+        text-align: center;
+        .datos{
+             
+            .label{
+                margin-right: 30px;   
+            }
+        }
+        .bottonform{
+            text-align: center;
+            .submit{
+                    margin-right: 20px;
+                }
+        }
+        .direccion{
+                margin-top: 100px;
+                padding: -25px;
+                font-size: 0.9rem;
+        }
+        .redes{
+                margin-bottom: 30px;
+                margin-right:10px;
+                margin-left: 10px;
+    
+        }
+    }
+      
+       
+   
+   
+    
+}
