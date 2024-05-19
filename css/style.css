@@ -349,73 +349,73 @@ header .h1title {
   border: #313131 solid 1px;
   grid-area: a;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  font-family: "EB Garamond", serif;
 }
-.padre1 .hijoA .ulaboutus {
-  list-style-type: none;
-}
-.padre1 .hijoA .ulaboutus .listaboutus1 {
+.padre1 .hijoA h2 {
   text-align: center;
-  font-family: "EB Garamond", serif;
+  padding-top: 5px;
 }
-.padre1 .hijoA .ulaboutus .parrafoaboutus {
+.padre1 .hijoA p {
   margin: 4px;
-  font-weight: normal;
-  font-family: "EB Garamond", serif;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 5px;
 }
 .padre1 .hijoB {
   border: #313131 solid 1px;
   grid-area: b;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  font-family: "EB Garamond", serif;
 }
-.padre1 .hijoB .ulaboutus {
-  list-style-type: none;
-}
-.padre1 .hijoB .ulaboutus .listaboutus1 {
+.padre1 .hijoB h2 {
   text-align: center;
-  font-family: "EB Garamond", serif;
+  padding-top: 5px;
 }
-.padre1 .hijoB .ulaboutus .parrafoaboutus {
+.padre1 .hijoB p {
   margin: 4px;
-  font-weight: normal;
-  font-family: "EB Garamond", serif;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 5px;
 }
 .padre1 .hijoC {
   border: #313131 solid 1px;
   grid-area: c;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  font-family: "EB Garamond", serif;
 }
-.padre1 .hijoC .ulaboutus {
-  list-style-type: none;
-}
-.padre1 .hijoC .ulaboutus .listaboutus1 {
+.padre1 .hijoC h2 {
   text-align: center;
-  font-family: "EB Garamond", serif;
+  padding-top: 5px;
 }
-.padre1 .hijoC .ulaboutus .parrafoaboutus {
+.padre1 .hijoC p {
   margin: 4px;
-  font-weight: normal;
-  font-family: "EB Garamond", serif;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 5px;
 }
 .padre1 .hijoD {
   border: #313131 solid 1px;
   grid-area: d;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  font-family: "EB Garamond", serif;
 }
-.padre1 .hijoD .ulaboutus {
-  list-style-type: none;
-}
-.padre1 .hijoD .ulaboutus .listaboutus1 {
+.padre1 .hijoD h2 {
   text-align: center;
-  font-family: "EB Garamond", serif;
+  padding-top: 5px;
 }
-.padre1 .hijoD .ulaboutus .parrafoaboutus {
+.padre1 .hijoD p {
   margin: 4px;
-  font-weight: normal;
-  font-family: "EB Garamond", serif;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 5px;
 }
 
 .review {
@@ -545,14 +545,15 @@ main .habitaciones .habitacion6 .texthabitacion {
 }
 
 main .expeperiencecontainer {
+  font-family: "EB Garamond", serif;
   padding-top: 20px;
-  padding-right: 20px;
+  padding-right: 0px;
   padding-left: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1.5fr 1.5fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-columns: 0.1fr;
+  grid-auto-rows: 0.1fr;
   gap: 12px 19px;
   grid-auto-flow: row;
   grid-template-areas: "textowellnes fotowellness fotowellness1" "fotodinning fotodinning1 textodinning" "textocelebration fotocelebration fotocelebration1";
@@ -603,15 +604,18 @@ main .expeperiencecontainer .textodinning .h2dinning {
 }
 main .expeperiencecontainer .textocelebration {
   grid-area: textocelebration;
+  padding-top: 20px;
 }
 main .expeperiencecontainer .textocelebration .h2celebration {
   text-align: center;
 }
 main .expeperiencecontainer .fotocelebration {
   grid-area: fotocelebration;
+  padding-top: 20px;
 }
 main .expeperiencecontainer .fotocelebration1 {
   grid-area: fotocelebration1;
+  padding-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

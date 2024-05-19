@@ -40,39 +40,41 @@ header{
         border: #313131 solid 1px;
         grid-area: a;
         display: flex;
+        flex-direction: column;
         align-items: center;    
+        font-family: $font-family;
+        h2{
+            text-align: center;
+            padding-top: 5px;
             
-        .ulaboutus{
-            list-style-type: none;
-            font-family: $font-family;
-            .listaboutus1{
-                text-align: center;
-                font-family: $font-family;
-            }
-            .parrafoaboutus{
-                margin: 4px;
-                font-weight: normal;
-                font-family: $font-family;
-            }
+        }    
+        p{
+            margin: 4px;
+            text-align:justify;
+            padding:20px;
+            padding-top: 5px;
+            
         }
+       
     }
     .hijoB{
         border: #313131 solid 1px;
         grid-area: b;
         display: flex;
+        flex-direction: column;
         align-items: center;    
+        font-family: $font-family;
+        h2{
+            text-align: center;
+            padding-top: 5px;
             
-        .ulaboutus{
-            list-style-type: none;
-            .listaboutus1{
-                text-align: center;
-                font-family: $font-family;
-            }
-            .parrafoaboutus{
-                margin: 4px;
-                font-weight: normal;
-                font-family: $font-family;
-            }
+        }    
+        p{
+            margin: 4px;
+            text-align:justify;
+            padding:20px;
+            padding-top: 5px;
+            
         }
     }
 
@@ -81,40 +83,45 @@ header{
         border: #313131 solid 1px;
         grid-area: c;
         display: flex;
+        flex-direction: column;
         align-items: center;    
+        font-family: $font-family; 
+        h2{
+            text-align: center;
+            padding-top: 5px;
             
-        .ulaboutus{
-            list-style-type: none;
-            .listaboutus1{
-                text-align: center;
-                font-family: $font-family;
-            }
-            .parrafoaboutus{
-                margin: 4px;
-                font-weight: normal;
-                font-family: $font-family;
-            }
+        }    
+        p{
+            margin: 4px;
+            text-align:justify;
+            padding:20px;
+            padding-top: 5px;
+            
         }
+            
+      
     }
 
     .hijoD{
         border: #313131 solid 1px;
         grid-area: d;
         display: flex;
+        flex-direction: column;
         align-items: center;    
+        font-family: $font-family; 
+        h2{
+            text-align: center;
+            padding-top: 5px;
             
-        .ulaboutus{
-            list-style-type: none;
-            .listaboutus1{
-                text-align: center;
-                font-family: $font-family;
-            }
-            .parrafoaboutus{
-                margin: 4px;
-                font-weight: normal;
-                font-family: $font-family;
-            }
+        }    
+        p{
+            margin: 4px;
+            text-align:justify;
+            padding:20px;
+            padding-top: 5px;
+            
         }
+            
     }
 
 
